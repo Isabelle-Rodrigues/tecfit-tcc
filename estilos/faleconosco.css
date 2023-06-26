@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Poppins:ital,wght@0,400;0,700;1,400&family=Sriracha&display=swap');
+
+:root {
+    --cor0: #CD74FE;
+    --cor1: #9857FF;
+    --cor2: #7C40DB;
+    --cor3: #0B033F;
+    --cor4: #070321;
+    --cor5: #070321;
+}
+
+/* RESET */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+nav, ul {
+    list-style: none;
+}
+
+a, button {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+a:hover, button:hover {
+    opacity: 1;
+    background-color: var(--cor3);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+/* HEADER */
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: white;
+}
+
+header img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+header nav {
+    display: flex;
+}
+
+header li a {
+    color: var(--cor5);
+}
+
+header li {
+    margin: 0px 15px;
+}
+
+header li:first-child {
+    margin-left: 0px;
+}
+
+header li:last-child {
+    margin-right: 0px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        margin-bottom: 15px;
+    }
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('../imagens/fale_conosco.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input {
+    margin-right: 3px;
+    
+}
+
+.forget label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.register {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor5);
+    padding: 50px 0px;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li:last-child {
+    margin-right: 0px;
+}
+
+footer ul li a {
+    color: var(--cor1);
+    font-size: 2em;
+}
+
+footer p {
+    color: var(--cor1);
+    text-align: center;
+}

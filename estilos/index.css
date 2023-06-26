@@ -1,0 +1,354 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Poppins:ital,wght@0,400;0,700;1,400&family=Sriracha&display=swap');
+
+:root {
+    --cor0: #CD74FE;
+    --cor1: #9857FF;
+    --cor2: #7C40DB;
+    --cor3: #0B033F;
+    --cor4: #070321;
+    --cor5: #070321;
+}
+
+/* RESET */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+nav, ul {
+    list-style: none;
+}
+
+a, button {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+a:hover, button:hover {
+    opacity: 1;
+    background-color:var(--cor5);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+/* HEADER */
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: white;
+}
+
+header img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+header nav {
+    display: flex;
+}
+
+header li a {
+    color: var(--cor5);
+}
+
+header li {
+    margin: 0px 15px;
+}
+
+header li:first-child {
+    margin-left: 0px;
+}
+
+header li:last-child {
+    margin-right: 0px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* BANNER */
+.banner {
+    background-image: url(../imagens/banner.jpg);
+    background-size: cover;
+    background-position: left top;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.banner h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.banner .btn {
+    background-color: white;
+    border-radius: 4px;
+    color: var(--cor5);
+    padding: 20px 50px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner h3 {
+        font-size: 1em;
+    }
+}
+
+
+/* CONHEÇA OS TEMAS */
+#temas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+#temas h3 {
+    font-size: 2em;
+    margin-bottom: 35px;
+    color: var(--cor5);
+    text-align: center;
+}
+
+#temas p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: var(--cor5);
+    text-align: center;
+}
+
+#temas hr {
+    width: 200px;
+    height: 2px;
+    background-color: var(--cor5);
+    margin-bottom: 70px;
+    border: none;
+}
+
+#temas .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#temas .grid li {
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+#temas .grid li.small {
+    flex-basis: 40%;
+}
+
+#temas .grid li.large {
+    flex-basis: 60%;
+}
+
+@media (max-width: 700px) {
+    #temas .grid li.small, #temas .grid li.large {
+        flex-basis: 100%;
+    }
+}
+
+
+/* O QUE É MASSA MUSCULAR */
+.massa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: var(--cor5);
+}
+
+.massa h3 {
+    font-size: 2em;
+    margin-bottom: 35px;
+    color: white;
+    text-align: center;
+}
+
+.massa p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: white;
+    text-align: center;
+}
+
+.massa hr {
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.massa .grid {
+    width: 100%;
+    display: flex;
+}
+
+.massa .grid li {
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.massa .grid li i {
+    color: var(--cor1);
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.massa .grid li h4 {
+    font-size: 1em;
+    color: var(--cor1);
+    margin-bottom: 30px;
+}
+
+.massa .grid li p {
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .massa .grid {
+        flex-direction: column;
+    }
+}
+
+
+/* SUGESTÕES */
+.sugestoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.sugestoes h3 {
+    font-size: 2em;
+    margin-bottom: 35px;
+    color: var(--cor5);
+    text-align: center;
+}
+
+.sugestoes p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: var(--cor5);
+    text-align: center;
+}
+
+.sugestoes hr {
+    width: 200px;
+    height: 2px;
+    background-color: var(--cor5);
+    margin-bottom: 70px;
+    border: none;
+}
+
+.sugestoes form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+
+.sugestoes input {
+    padding: 15px;
+    border: 1px solid var(--cor5);
+    border-radius: 4px;
+    margin-right: 15px;
+    flex: 1;
+}
+
+.sugestoes button {
+    padding: 15px;
+    background-color: var(--cor5);
+    color: var(--cor1);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .sugestoes input {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor5);
+    padding: 50px 0px;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li:last-child {
+    margin-right: 0px;
+}
+
+footer ul li a {
+    color: var(--cor1);
+    font-size: 2em;
+}
+
+footer p {
+    color: var(--cor1);
+    text-align: center;
+}

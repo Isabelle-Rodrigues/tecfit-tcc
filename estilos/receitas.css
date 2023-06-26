@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Poppins:ital,wght@0,400;0,700;1,400&family=Sriracha&display=swap');
+
+:root {
+    --cor0: #CD74FE;
+    --cor1: #9857FF;
+    --cor2: #7C40DB;
+    --cor3: #0B033F;
+    --cor4: #070321;
+    --cor5: #070321;
+}
+
+/* RESET */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+nav, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+a:hover {
+    opacity: 1;
+    background-color: var(--cor3);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+/* HEADER */
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: white;
+}
+
+header img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+header nav {
+    display: flex;
+}
+
+header li a {
+    color: var(--cor5);
+}
+
+header li {
+    margin: 0px 15px;
+}
+
+header li:first-child {
+    margin-left: 0px;
+}
+
+header li:last-child {
+    margin-right: 0px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* RECEITAS */
+.receitas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+    background-color: var(--cor5);
+}
+
+.receitas h3 {
+    font-size: 2em;
+    margin-bottom: 35px;
+    color: white;
+    text-align: center;
+}
+
+.receitas p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: white;
+    text-align: center;
+}
+
+.receitas hr {
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 70px;
+    border: none;
+    margin: 20px auto;
+}
+
+.receitas .grid {
+    width: 100%;
+    display: flex;
+}
+
+.receitas .grid li {
+    padding: 30px;
+    margin: 20px;
+    opacity: 0.9;
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--cor2);
+    border: 2px solid var(--cor5);
+}
+
+.receitas .grid li h5 {
+    color: var(--cor4);
+    font-size: 1em;
+    margin: 10px 0px;
+}
+
+.receitas .grid li p {
+    margin: 10px 0px;
+}
+
+.receitas .grid li:hover {
+    opacity: 1;
+    background-color: var(--cor1);
+    color: white;
+    border: 2px solid var(--cor0);
+}
+
+.receitas .grid li i {
+    color: var(--cor5);
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.receitas .grid li h4 {
+    font-size: 1em;
+    color: var(--cor5);
+    margin-bottom: 30px;
+}
+
+.receitas .grid li p {
+    color: white;
+}
+
+@media (max-width: 1100px) {
+    .receitas .grid {
+        flex-direction: column;
+    }
+}
+
+
+/* RECEITAS */
+.receitas .grid li ul {
+    list-style: circle;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor5);
+    padding: 50px 0px;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li:last-child {
+    margin-right: 0px;
+}
+
+footer ul li a {
+    color: var(--cor1);
+    font-size: 2em;
+}
+
+footer p {
+    color: var(--cor1);
+    text-align: center;
+}
